@@ -28,16 +28,6 @@ def listaPerfectos(numeros):
     for numero in numeros:
         imprimirDivisoresPerfecto(numero)
 
- 
-
-
-#Prueba de la función sin necesidad de consola, Quitar comentario para probar
-# Resultado Esperado:
-listaPrueba = [-3, 6, 5, 28, 100]
-
-listaPerfectos(listaPrueba)
-
-
 
 #Función para pedir los n números por consola.
 def main():
@@ -50,5 +40,77 @@ def main():
 
     listaPerfectos(listaConsola)
 
+
 #Iniciamos el programa para pedir los n números por consola.
-main()
+main() 
+
+
+
+#Prueba de la función sin necesidad de consola, Quitar comentario para probar:
+""" listaPrueba = [-3, 6, 5, 28, 100]
+
+listaPerfectos(listaPrueba)
+ """
+ 
+#Resultado Esperado:
+'''
+******************
+El número -3 NO es un entero Positivo
+**********************
+
+
+******************
+Los divisores de 6, son:
+
+1
+2
+3
+
+
+El número 6 es Perfecto
+
+**********************
+
+
+******************
+Los divisores de 5, son:
+
+1
+
+
+El número 5 NO es Perfecto
+
+********************
+
+
+******************
+Los divisores de 28, son:
+
+1
+2
+4
+7
+14
+
+
+El número 28 es Perfecto
+
+**********************
+
+
+******************
+Los divisores de 100, son:
+
+1
+2
+4
+10
+20
+25
+50
+
+
+El número 100 NO es Perfecto
+
+********************'''
+
