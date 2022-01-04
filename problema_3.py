@@ -1,4 +1,10 @@
-
+""" 
+3- Un entero positivo se llama perfecto si éste es igual a la suma de todos sus divisores
+diferentes de él. Por ejemplo:
+6 es perfecto porque 6 = 1 + 2 + 3.
+28 es perfecto porque 28 = 1 + 2 + 4 + 7 + 14
+Escriba un programa que reciba como entrada n números enteros positivos, y por cada uno
+de ellos imprima sus divisores e indique si es perfecto o no. """
 
 
 
@@ -36,8 +42,6 @@ def main():
     for numero in range(n):
         listaConsola.append(int(input('Ingrese el ' + str(numero+1) + '° número: \t')))
 
-
-
     listaPerfectos(listaConsola)
 
 
@@ -51,7 +55,7 @@ main()
 
 listaPerfectos(listaPrueba)
  """
- 
+
 #Resultado Esperado:
 '''
 ******************

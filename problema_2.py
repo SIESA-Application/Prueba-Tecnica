@@ -1,3 +1,7 @@
+""" 2- Realice un algoritmo que reciba como parámetro dos números enteros y retorne la
+división de ambos números.
+ """
+
 def division(dividendo, divisor):
     try:
         return dividendo/divisor
