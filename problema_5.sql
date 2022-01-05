@@ -111,3 +111,4 @@ select t5.descripcion_tipo_mascota, t5.nombre_propietario, count(t5.idmascota) a
 
 /* 6 ● Listas los propietarios que no tienen mascotas. */
 
+select p.idpropietario, p.nombre from propietario as p where p.idpropietario not in (select propietario from mascota );
