@@ -105,7 +105,7 @@ select * from (select t4.nombre_propietario, count(t4.idmascota) as numero_masco
 /* 5 ● Listar el número de mascotas por cada tipo de mascota y por cada propietario.
  */
 
-select * from (select t.idmascota, t.nombre as nombre_mascota, t.descripcion as descripcion_tipo_mascota, p.nombre as nombre_propietario from propietario as p inner join (select m.idmascota, m.nombre, tm.descripcion,  m.propietario  from mascota as m inner join tipo_mascota as tm on m.tipo_mascota==tm.idtipo_mascota) as t on t.propietario==p.idpropietario) as t5
+select t5.descripcion_tipo_mascota, t5.nombre_propietario, count(t5.idmascota) as numero_mascotas from (select t.idmascota, t.nombre as nombre_mascota, t.descripcion as descripcion_tipo_mascota, p.nombre as nombre_propietario from propietario as p inner join (select m.idmascota, m.nombre, tm.descripcion,  m.propietario  from mascota as m inner join tipo_mascota as tm on m.tipo_mascota==tm.idtipo_mascota) as t on t.propietario==p.idpropietario) as t5 group by t5.descripcion_tipo_mascota;
 
 
 
