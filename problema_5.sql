@@ -1,3 +1,7 @@
+/* Como ejemplo se puede tomar la base de datos anexada al repositorio  MascotasMascotas.db */
+
+
+
 /* 5- La empresa “Mascotas y Mascotas”, rescata animales que han sido abandonados, los
 rehabilitan y cuando están totalmente sanos, los ponen a disposición para que estos sean
 adoptados, se tienen las siguientes entidades:
@@ -101,7 +105,7 @@ select * from (select t4.nombre_propietario, count(t4.idmascota) as numero_masco
 /* 5 ● Listar el número de mascotas por cada tipo de mascota y por cada propietario.
  */
 
-
+select * from (select t.idmascota, t.nombre as nombre_mascota, t.descripcion as descripcion_tipo_mascota, p.nombre as nombre_propietario from propietario as p inner join (select m.idmascota, m.nombre, tm.descripcion,  m.propietario  from mascota as m inner join tipo_mascota as tm on m.tipo_mascota==tm.idtipo_mascota) as t on t.propietario==p.idpropietario) as t5
 
 
 
